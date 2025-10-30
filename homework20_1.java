@@ -118,11 +118,16 @@ class LinkedList
       }
       else {
          ListNode current = head;
-         while (current.next.value < newNode.value) {
-            current = current.next;
+         if (current.next == null) {
+            newNode.next = current.next;
+            current.next = newNode;
+         } else {
+            while (current.next.value < newNode.value) {
+               current = current.next;
+            }
+            newNode.next = current.next;
+            current.next = newNode;
          }
-         newNode.next = current.next;
-         current.next = newNode;
       }
    }
    
