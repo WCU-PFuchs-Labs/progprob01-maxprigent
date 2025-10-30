@@ -23,15 +23,18 @@ public class homework20_1
    {
       //add your code here
       LinkedList llist = new LinkedList();
+      System.out.println("Args: ");
+      System.out.println(args);
 
-      /*
+      
       ListNode first = new ListNode(1);
       ListNode second = new ListNode(2);
       ListNode third = new ListNode(3);
       ListNode fourth = new ListNode(4);
       ListNode fifth = new ListNode(5);
-      */
+      
 
+      /*
       Scanner scanner = new Scanner(System.in);
       System.out.println("How many integers do you want to add? ");
       int numInts = scanner.nextInt();
@@ -43,6 +46,7 @@ public class homework20_1
          ListNode newNode = new ListNode(number);
          llist.add(newNode);
       }
+      */
 
       System.out.println("Unmodified list:");
       System.out.println(llist);   
@@ -58,6 +62,7 @@ public class homework20_1
       llist.insert(new ListNode(888),3);
       System.out.println("\nList with node \"888\" added in position 3:");
       System.out.println(llist);
+      
    }
 }
 
