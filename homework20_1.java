@@ -22,32 +22,44 @@ public class homework20_1
    public static void main(String[] args)
    {
       //add your code here
-      LinkedList llist = new LinkedList();
-      System.out.println("Args: ");
-      System.out.println(args);
+      LinkedList llist1 = new LinkedList();
+      LinkedList llist2 = new LinkedList();
 
-      
+      /*
       ListNode first = new ListNode(1);
       ListNode second = new ListNode(2);
       ListNode third = new ListNode(3);
       ListNode fourth = new ListNode(4);
       ListNode fifth = new ListNode(5);
-      
+      */
 
-      /*
+      
       Scanner scanner = new Scanner(System.in);
-      System.out.println("How many integers do you want to add? ");
-      int numInts = scanner.nextInt();
+      System.out.println("List 1 ints");
 
       int number;
-      for (int i=0;i<numInts;i++) {
+      for (int i=0;i<5;i++) {
          System.out.printf("Enter integer %d: ",i+1);
          number = scanner.nextInt();
          ListNode newNode = new ListNode(number);
-         llist.add(newNode);
+         llist1.add(newNode);
       }
-      */
+      System.out.println(llist1);
 
+      System.out.println("List 2 ints");
+
+      for (int i=0;i<5;i++) {
+         System.out.printf("Enter integer %d: ",i+1);
+         number = scanner.nextInt();
+         ListNode newNode = new ListNode(number);
+         llist2.add(newNode);
+      }
+      System.out.println(llist2);
+
+   
+      
+
+      /*
       System.out.println("Unmodified list:");
       System.out.println(llist);   
 
@@ -62,6 +74,7 @@ public class homework20_1
       llist.insert(new ListNode(888),3);
       System.out.println("\nList with node \"888\" added in position 3:");
       System.out.println(llist);
+      */
       
    }
 }
