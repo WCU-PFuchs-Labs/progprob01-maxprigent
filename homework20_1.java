@@ -35,7 +35,7 @@ public class homework20_1
 
       
       Scanner scanner = new Scanner(System.in);
-      System.out.println("List 1 ints");
+      System.out.println("List1 ints");
 
       int number;
       for (int i=0;i<5;i++) {
@@ -48,12 +48,11 @@ public class homework20_1
          llist1.add(newNode);
       }
       System.out.println(llist1);
-
-      System.out.println("List 2 ints");
+      /*
+      System.out.println("List2 ints");
 
       for (int i=0;i<5;i++) {
          System.out.printf("Enter integer %d: ",i+1);
-         number = scanner.nextInt();
          ListNode newNode = new ListNode(-1);
          if (scanner.hasNext()) {
             number = scanner.nextInt();
@@ -62,18 +61,19 @@ public class homework20_1
          llist2.add(newNode);
       }
       System.out.println(llist2);
+      */
       scanner.close();
    
       
 
-      /*
-      System.out.println("Unmodified list:");
-      System.out.println(llist);   
+      
+      //System.out.println("Unmodified list:");
+      //System.out.println(llist1);   
 
-      llist.deleteDuplicates();
+      llist1.deleteDuplicates();
       System.out.println("\nList with duplicates removed:");
-      System.out.println(llist);
-
+      System.out.println(llist1);
+      /*
       llist.insert(new ListNode(4));
       System.out.println("\nList with node \"4\" added:");
       System.out.println(llist);
